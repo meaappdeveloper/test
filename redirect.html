@@ -1,33 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Choose UPI App</title>
+  <title>Pay via UPI</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-  <h3>Choose UPI App</h3>
+  <p>Redirecting to UPI app…</p>
 
+  <script>
+    setTimeout(function () {
+      window.location.href =
+        "upi://pay?pa=sutarravindra64-1@okaxis&pn=Ravindra%20Sutar&cu=INR";
+    }, 300);
+  </script>
+
+  <p>If it doesn’t open automatically, tap below:</p>
   <a href="upi://pay?pa=sutarravindra64-1@okaxis&pn=Ravindra%20Sutar&cu=INR">
-    Pay with any UPI App
-  </a>
-
-  <br><br>
-
-  <!-- Android intent links -->
-  <a href="intent://pay?pa=sutarravindra64-1@okaxis&pn=Ravindra%20Sutar&cu=INR#Intent;scheme=upi;package=com.google.android.apps.nbu.paisa.user;end">
-    Pay with Google Pay
-  </a>
-
-  <br><br>
-
-  <a href="intent://pay?pa=sutarravindra64-1@okaxis&pn=Ravindra%20Sutar&cu=INR#Intent;scheme=upi;package=com.phonepe.app;end">
-    Pay with PhonePe
-  </a>
-
-  <br><br>
-
-  <a href="intent://pay?pa=sutarravindra64-1@okaxis&pn=Ravindra%20Sutar&cu=INR#Intent;scheme=upi;package=net.one97.paytm;end">
-    Pay with Paytm
+    Pay via UPI
   </a>
 </body>
 </html>
